@@ -1,4 +1,4 @@
-# jnlp-slave-helm-kubectl-docker
+# jenkins-slave-helm-kubectl-docker
 This image is using jenkins/jnlp-slave:alpine as a base then add:
 
 - docker: version 18.06.1-ce
