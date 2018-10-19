@@ -21,9 +21,5 @@ RUN curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s
 
 RUN curl -o helm.tar https://storage.googleapis.com/kubernetes-helm/helm-v2.9.1-linux-amd64.tar.gz && \
     tar xvf helm.tar && \
-    cp linux-amd64/helm /usr/local/bin/ && \
-    mkdir -p ~/.helm/plugins && \
-    helm plugin install https://github.com/hypnoglow/helm-s3.git
-RUN helm init --client-only
-RUN helm repo add incubator http://storage.googleapis.com/kubernetes-charts-incubator
+    cp linux-amd64/helm /usr/local/bin/
 USER jenkins
